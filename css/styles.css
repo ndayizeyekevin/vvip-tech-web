@@ -331,9 +331,15 @@
         }
         
         .contact-form {
-            background-color: #f8f9fa;
+            background: linear-gradient(135deg, #0056b3, #00a0e9);
+            color: white;
             padding: 30px;
             border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h3 {
+            color: white;
         }
         
         .form-group {
@@ -344,19 +350,32 @@
             display: block;
             margin-bottom: 8px;
             font-weight: 500;
+            color: white;
         }
         
         .form-control {
             width: 100%;
             padding: 12px;
-            border: 1px solid #ddd;
+            border: 1px solid rgba(255, 255, 255, 0.3);
             border-radius: 4px;
             font-size: 16px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.7);
         }
         
         textarea.form-control {
             height: 150px;
             resize: vertical;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        textarea.form-control::placeholder {
+            color: rgba(255, 255, 255, 0.7);
         }
         
         .form-message {
@@ -456,6 +475,10 @@
 
             .mobile-menu-btn:hover {
                 background: #003d7a;
+            }
+
+            #about {
+                padding: 30px !important;
             }
         }
 
